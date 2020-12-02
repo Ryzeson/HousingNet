@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <!--
+	report_error.html
+	Students can report errors to administrators here
+      -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="dash.css">
+    <title>HousingNet Student Home - Report Error</title>
+  </head>
+  
+  <body>
+    <nav>
+      <div class="logo">
+	<img src="grapes.jpg" alt="grapes">
+	<p>HousingNet</p>
+      </div>
+      <ul class="nav-links">
+	<li><a href="stud_home.php">Home</a></li>
+	<li><a href="stud_search.php">Search</a></li>
+	<li><a href="stud_contact.php">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="fill pl-2 pt-1">
+      <h4><strong>Report an Error</strong></h4>
+      <p>Here, you can send a message to our administrators. Please describe your problem in detail.</p>
+      <form action="report_error_form.php" method="post">
+	Message:<br/>
+	<textarea name="content" rows="5" cols="40" style="font-size: 14px">Type something...</textarea><br/>
+	<input type="submit" value="Submit Report"/>
+      </form>
+      <br/>
+      <a href="stud_home.php">Back to home screen...</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<!-- upload_pic.html
+		Allows the user to upload a profile pic.
+		The picture will be uploaded to the uploaded folder, and the name will be stored in the pic table-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="dash.css">
+		<title>HousingNet Student Home</title>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<img src="grapes.jpg" alt="grapes">
+				<p>HousingNet</p>
+			</div>
+			<ul class="nav-links">
+				<li><a href="stud_home.php">Home</a></li>
+				<li><a href="stud_search.php">Search</a></li>
+				<li><a href="stud_contact.php">Contact</a></li>
+			</ul>
+		</nav>
+
+		<div class="fill">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-6">
+						<FORM name='fmUpload' method='POST' action='upload_f.php' enctype='multipart/form-data'>
+							<P>Upload profile picture: <INPUT type='file' name='myFile1' /></P>
+							<INPUT type='submit' value='Upload my files' />
+						</FORM>
+					</div>
+					<div class="col-lg-3"></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+

@@ -1,0 +1,207 @@
+/*css for styling everything but the landing page*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+	/* background-color: skyblue; */
+}
+
+a {
+	color: #05509c;
+}
+
+a:hover {
+	color: #03b1fc;
+}
+
+nav {
+	display: flex;
+	height: 8vh;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Playfair Display', serif;
+	/* background-color: powderblue;  */
+}
+
+nav .logo {
+	display: flex;
+}
+
+nav .logo img {
+	margin: 0 10px;
+	height: 8vh;
+	/* width: auto; */
+}
+
+nav .logo p {
+	font-size: 28px;
+	line-height: 8vh;
+	color: #05509c;
+	font-weight: bold;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	/* background-color: red; */
+	width: 30%;
+	/* align-items: center; */
+}
+
+nav li {
+	list-style: none;
+}
+
+nav li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #05509c;
+	font-size: 18px;
+	display: block; /* needed for transform: scale() to work */
+}
+
+nav li a:hover {
+	transform: scale(1.3);
+}
+
+/* For background change on hover */
+nav li a:hover {
+	background-color: #F1E8E8;
+}
+
+div.fill {
+	height: 192vh;
+	width: 100%;
+	position: relative;
+	background: powderblue;
+}
+
+/* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.dashboard {
+	background-color: grey;
+	margin: 0;
+	top: 50%;
+	height: 100%;
+	position: relative;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border-radius: 15px;
+	border-color: 2px darkgrey;
+}
+
+.container {
+	/* margin-top: 150px; */
+	padding-top: 150px;
+  	height: 550px;
+  /* border: 3px solid green; */
+}
+
+h2 {
+	font-size: 40px;
+	color: #05509c;
+}
+
+.info p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	/* font-weight: bold; */
+}
+
+.button {
+	display: inline-block;
+	height: 45px;
+	width: 125px;
+	color: white;
+	text-align: center;
+	border-radius: 15px;
+	line-height: 45px;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.report-error {
+	background-color: red;
+}
+
+.report-error:hover {
+	background-color: darkred;
+}
+
+.upload-pic {
+	background-color: #05509c;
+}
+
+.upload-pic:hover {
+	background-color: darkblue;
+}
+
+.email-all {
+	background-color: #1C7E5B;
+	margin: 15px;
+}
+
+.email-all:hover {
+	background-color: #0ac93d;;
+	margin: 15px;
+}
+
+table, th, td {
+  	border: 3px solid black;
+ 	border-collapse: collapse;
+ 	margin: 0 auto;
+}
+
+th {
+	background-color: #1C7E5B;
+	color: white;
+ 	padding: 10px;
+ 	font-weight: bold;
+	font-size: 110%;
+}
+
+tr{
+ 	background-color: #C1DEE9;
+}
+
+tr:nth-child(odd){
+	 background-color: #C1E9E3;
+}
+
+td {
+ 	background-color: transparent;
+ 	padding: 10px;
+}
+
+table{
+	table-layout: fixed;
+	width: 310px;
+  	margin-right: 1%;
+ 	margin-left: 1%;
+ 	display: inline-block;
+ 	border: none;
+	float: center;
+}
+
+th, tr {
+	width: 310px;
+}
+
+label {
+	margin-left: 10px;
+}
+
+#fname, #lname {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+/* .profile {
+	width: 350px;
+	height: 3500px !important;
+	opacity: .2 !important;
+} */
